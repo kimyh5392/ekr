@@ -1,0 +1,468 @@
+@import 'common';
+
+/* event-wrap */
+.event-wrap {
+    padding-bottom: 160px;
+    background-color: #ffe486;
+    .container {
+        max-width: 1030px;
+        .section-header {
+            display: table;
+            width: 100%;
+            text-align: center;
+            padding: 100px 0 200px;
+            small {
+                display: inline-block;
+                font-size: 30px;
+                color: #fff;
+                @include gd();
+                line-height: 50px;
+                padding: 0 20px;
+                background-color: #000;
+                border-radius: 100px;
+            }
+            h3 {
+                font-size: 100px;
+                color: #000;
+                letter-spacing: 5px;
+                margin-top: 30px;
+            }
+        }
+        .section-content {
+            .event-box {
+                position: relative;
+                padding: 60px 40px;
+                border-radius: 30px;
+                border: 2px solid #000;
+                background-color: #fff;
+                h4 {
+                    position: absolute;
+                    top: -30px;
+                    left: 50%;
+                    display: inline-block;
+                    font-size: 30px;
+                    line-height: 60px;
+                    text-align: center;
+                    color: #fff;
+                    @include gd();
+                    padding: 0 45px;
+                    background-color: #000;
+                    border-radius: 100px;
+                    transform: translateX(-50%);
+                }
+                .quiz {
+                    position: absolute;
+                    top: -100px;
+                    z-index: 1;
+                    left: calc(50% - 205px);
+                    transform: rotate(-10deg);
+                    img {
+                        display: block;
+                        max-width: 160px;
+                    }
+                }
+                b {
+                    display: block;
+                    font-size: 28px;
+                    color: #f2652a;
+                    @include gd();
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                .usr-list {
+                    > li {
+                        > dl {
+                            font-size: 0;
+                            > dt, dd {
+                                display: inline-block;
+                                font-size: 22px;
+                                line-height: 28px;
+                                vertical-align: top;
+                            }
+                            dt {
+                                font-weight: bold;
+                                margin-right: 20px;
+                            }
+                        }
+                        & ~ li {
+                            margin-top: 15px;
+                        }
+                    }
+                    &.block-list {
+                        > li {
+                            > dl {
+                                > dt, dd {
+                                    display: block;
+                                }
+                                > dt {
+                                    margin-right: 0;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .usr {
+                    padding-bottom: 45px;
+                }
+                .box {
+                    display: table;
+                    width: 100%;
+                    height: 100%;
+                    table-layout: fixed;
+                    padding-top: 45px;
+                    border-top: 1px dashed #000;
+                    > div {
+                        display: table-cell;
+                        height: 100%;
+                        vertical-align: top;
+                        &:first-child {
+                            padding-right: 45px;
+                        }
+                        &:last-child {
+                            border-left: 1px dashed #000;
+                            padding-left: 45px;
+                        }
+                    }
+                }
+                .quiz-list {
+                    > ol {
+                        > li {
+                            > dl {
+                                display: table;
+                                width: 100%;
+                                table-layout: fixed;
+                                > dt, dd {
+                                    display: table-cell;
+                                    vertical-align: top;
+                                }
+                                > dt {
+                                    width: 100px;
+                                    font-weight: bold;
+                                    font-size: 34px;
+                                    @include gd();
+                                }
+                                > dd {
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    font-weight: 500;
+                                    letter-spacing: -.5px;
+                                    padding-left: 30px;
+                                    .example {
+                                        font-size: 0;
+                                        margin-top: 30px;
+                                        > li {
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            font-size: 20px;
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                            & ~ li {
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+                }
+                .guide-list {
+                    position: relative;
+                    width: 100%;
+                    margin-top: 60px;
+                    padding-right: 130px;
+                    .qr-area {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        img {
+                            display: block;
+                            max-width: 100px;
+                            margin: 0 auto;
+                        }
+                    }
+                    > ul {
+                        > li {
+                            > dl {
+                                display: table;
+                                width: 100%;
+                                table-layout: fixed;
+                                dt, dd {
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                }
+                                > dt {
+                                    width: 140px;
+                                    > span {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        font-size: 22px;
+                                        font-weight: 500;
+                                        //@include gb();
+                                        color: #fff;
+                                        padding: 0 20px;
+                                        line-height: 50px;
+                                        background-color: #f2652a;
+                                        border-radius: 100px;
+                                    }
+                                }
+                                > dd {
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    padding-left: 20px;
+                                }
+                            }
+                            & ~ li {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+                .btn-area {
+                    text-align: center;
+                    margin-top: 30px;
+                    .btn-event {
+                        display: block;
+                        max-width: 300px;
+                        font-size: 20px;
+                        color: #000;
+                        line-height: 55px;
+                        font-weight: bold;
+                        margin: 0 auto;
+                        border: 2px solid #000;
+                        border-radius: 5px;
+                        @include gd();
+                        @include transition();
+                        &:hover {
+                            color: #fff;
+                            border-color: $kcolor;
+                            background-color: $kcolor;
+                        }
+                    }
+                }
+                & ~ .event-box {
+                    margin-top: 200px;
+                }
+            }
+        }
+    }
+    @media(max-width: $md) {
+        padding-bottom: 100px;
+        .container {
+            .section-header {
+                padding: 60px 0 80px;
+                small {
+                    font-size: 18px;
+                    line-height: 36px;
+                }
+                h3 {
+                    font-size: 46px;
+                    margin-top: 20px;
+                }
+            }
+            .section-content {
+                .event-box {
+                    padding: 40px 15px 30px;
+                    h4 {
+                        top: -20px;
+                        font-size: 22px;
+                        line-height: 40px;
+                        white-space: nowrap;
+                        padding: 0 20px;
+                    }
+                    b {
+                        font-size: 22px;
+                        margin-bottom: 15px;
+                    }
+                    .usr {
+                        padding-bottom: 30px;
+                    }
+                    .quiz {
+                        top: -78px;
+                        left: calc(50% - 145px);
+                        img {
+                            width: 120px;
+                        }
+                    }
+                    .usr-list {
+                        > li {
+                            > dl {
+                                > dt, dd {
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                                > dd {
+                                    
+                                }
+                            }
+                        }
+                        &.block-list {
+                            > li {
+                                > dl {
+                                    > dt {
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box {
+                        display: block;
+                        padding-top: 30px;
+                        > div {
+                            display: block;
+                            padding-bottom: 30px;
+                            &:last-child {
+                                padding: 30px 0 0 0;
+                                border-left: 0;
+                                border-top: 1px dashed #000;
+                            }
+                        }
+                    }
+                    .quiz-list {
+                        > ol {
+                            > li {
+                                > dl {
+                                    > dt {
+                                        font-size: 22px;
+                                        display: block;
+                                    }
+                                    > dd {
+                                        display: block;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        padding-left: 0;
+                                        margin-top: 10px;
+                                        .example {
+                                            margin-top: 20px;
+                                            > li {
+                                                font-size: 16px;
+                                                margin-right: 20px;
+                                                margin-bottom: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                                & ~ li {
+                                    margin-top: 30px;
+                                }
+                            }
+                        }
+                    }
+                    .guide-list {
+                        margin-top: 30px;
+                        padding-right: 0;
+                        > ul {
+                            > li {
+                                > dl {
+                                    display: block;
+                                    > dt {
+                                        display: block;
+                                        span {
+                                            font-size: 18px;
+                                            line-height: 40px;
+                                        }
+                                    }
+                                    > dd {
+                                        display: block;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        padding-left: 0;
+                                        padding-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .qr-area {
+                            position: static;
+                            margin-top: 30px;
+                        }
+                    }
+                    & ~ .event-box {
+                        margin-top: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

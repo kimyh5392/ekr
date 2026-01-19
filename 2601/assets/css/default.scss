@@ -31,6 +31,7 @@
                     display: block;
                     width: auto;
                     height: 40px;
+                    filter: brightness(0) saturate(100%) invert(38%) sepia(48%) saturate(525%) hue-rotate(348deg) brightness(99%) contrast(89%);
                 }
             }
         }
@@ -111,10 +112,9 @@
             position: relative;
             display: flex;
             justify-content: space-between;
-            padding: 30px 0 64px;
             &:before {
                 position: absolute;
-                top: 108px;
+                top: 96px;
                 left: 0;
                 content: '';
                 display: block;
@@ -124,18 +124,13 @@
             }
             > li {
                 min-width: 260px;
+                padding: 30px 0 64px;
                 > a {
                     font-size: 30px;
                     color: #000;
                     line-height: 42px;
                     @include gb();
                     @include transition();
-                    small {
-                        display: block;
-                        font-size: 16px;
-                        line-height: 20px;
-                        @include gd();
-                    }
                 }
                 > ul {
                     margin-top: 46px;
@@ -192,16 +187,12 @@
                     position: relative;
                     display: block;
                     min-width: 100%;
+                    padding: 0;
                     > a {
                         position: relative;
                         display: block;
-                        line-height: 22px;
+                        line-height: normal;
                         padding: 20px 0;
-                        small {
-                            font-size: 14px;
-                            line-height: 20px;
-                            margin-top: 10px;
-                        }
                         &:before, &:after {
                             position: absolute;
                             top: 50%;

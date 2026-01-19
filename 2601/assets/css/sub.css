@@ -1,3 +1,358 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, etails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
 
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, hr {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.visible-sm {
+  display: none !important; }
+  @media (max-width: 1024px) {
+    .visible-sm {
+      display: block !important; } }
+
+.visible-lg {
+  display: block !important; }
+  @media (max-width: 1024px) {
+    .visible-lg {
+      display: none !important; } }
+
+.d-block {
+  display: block !important; }
+
+body {
+  min-width: 360px;
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  line-height: 1;
+  font-weight: 300;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  letter-spacing: -.3px;
+  word-break: break-all;
+  box-sizing: border-box;
+  padding-top: 90px; }
+  body *, body *::before, body *::after {
+    box-sizing: border-box; }
+  @media (max-width: 1024px) {
+    body {
+      padding-top: 70px; } }
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+  resize: none; }
+
+a, button {
+  color: #000;
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: none; }
+  a:hover, button:hover {
+    color: #000; }
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.container-fluid {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+/* event-wrap */
+.event-wrap {
+  padding-bottom: 160px;
+  background-color: #ffe486; }
+  .event-wrap .container {
+    max-width: 1030px; }
+    .event-wrap .container .section-header {
+      display: table;
+      width: 100%;
+      text-align: center;
+      padding: 100px 0 200px; }
+      .event-wrap .container .section-header small {
+        display: inline-block;
+        font-size: 30px;
+        color: #fff;
+        font-family: "Gowun Dodum", sans-serif;
+        line-height: 50px;
+        padding: 0 20px;
+        background-color: #000;
+        border-radius: 100px; }
+      .event-wrap .container .section-header h3 {
+        font-size: 100px;
+        color: #000;
+        letter-spacing: 5px;
+        margin-top: 30px; }
+    .event-wrap .container .section-content .event-box {
+      position: relative;
+      padding: 60px 40px;
+      border-radius: 30px;
+      border: 2px solid #000;
+      background-color: #fff; }
+      .event-wrap .container .section-content .event-box h4 {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+        font-family: "Gowun Dodum", sans-serif;
+        padding: 0 45px;
+        background-color: #000;
+        border-radius: 100px;
+        transform: translateX(-50%); }
+      .event-wrap .container .section-content .event-box .quiz {
+        position: absolute;
+        top: -100px;
+        z-index: 1;
+        left: calc(50% - 205px);
+        transform: rotate(-10deg); }
+        .event-wrap .container .section-content .event-box .quiz img {
+          display: block;
+          max-width: 160px; }
+      .event-wrap .container .section-content .event-box b {
+        display: block;
+        font-size: 28px;
+        color: #f2652a;
+        font-family: "Gowun Dodum", sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px; }
+      .event-wrap .container .section-content .event-box .usr-list > li > dl {
+        font-size: 0; }
+        .event-wrap .container .section-content .event-box .usr-list > li > dl > dt, .event-wrap .container .section-content .event-box .usr-list > li > dl dd {
+          display: inline-block;
+          font-size: 22px;
+          line-height: 28px;
+          vertical-align: top; }
+        .event-wrap .container .section-content .event-box .usr-list > li > dl dt {
+          font-weight: bold;
+          margin-right: 20px; }
+      .event-wrap .container .section-content .event-box .usr-list > li ~ li {
+        margin-top: 15px; }
+      .event-wrap .container .section-content .event-box .usr-list.block-list > li > dl > dt, .event-wrap .container .section-content .event-box .usr-list.block-list > li > dl dd {
+        display: block; }
+      .event-wrap .container .section-content .event-box .usr-list.block-list > li > dl > dt {
+        margin-right: 0;
+        margin-bottom: 10px; }
+      .event-wrap .container .section-content .event-box .usr {
+        padding-bottom: 45px; }
+      .event-wrap .container .section-content .event-box .box {
+        display: table;
+        width: 100%;
+        height: 100%;
+        table-layout: fixed;
+        padding-top: 45px;
+        border-top: 1px dashed #000; }
+        .event-wrap .container .section-content .event-box .box > div {
+          display: table-cell;
+          height: 100%;
+          vertical-align: top; }
+          .event-wrap .container .section-content .event-box .box > div:first-child {
+            padding-right: 45px; }
+          .event-wrap .container .section-content .event-box .box > div:last-child {
+            border-left: 1px dashed #000;
+            padding-left: 45px; }
+      .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl {
+        display: table;
+        width: 100%;
+        table-layout: fixed; }
+        .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dt, .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl dd {
+          display: table-cell;
+          vertical-align: top; }
+        .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dt {
+          width: 100px;
+          font-weight: bold;
+          font-size: 34px;
+          font-family: "Gowun Dodum", sans-serif; }
+        .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dd {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+          letter-spacing: -.5px;
+          padding-left: 30px; }
+          .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dd .example {
+            font-size: 0;
+            margin-top: 30px; }
+            .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dd .example > li {
+              display: inline-block;
+              vertical-align: top;
+              font-size: 20px;
+              margin-right: 30px; }
+      .event-wrap .container .section-content .event-box .quiz-list > ol > li ~ li {
+        margin-top: 60px; }
+      .event-wrap .container .section-content .event-box .guide-list {
+        position: relative;
+        width: 100%;
+        margin-top: 60px;
+        padding-right: 130px; }
+        .event-wrap .container .section-content .event-box .guide-list .qr-area {
+          position: absolute;
+          top: 0;
+          right: 0; }
+          .event-wrap .container .section-content .event-box .guide-list .qr-area img {
+            display: block;
+            max-width: 100px;
+            margin: 0 auto; }
+        .event-wrap .container .section-content .event-box .guide-list > ul > li > dl {
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+          .event-wrap .container .section-content .event-box .guide-list > ul > li > dl dt, .event-wrap .container .section-content .event-box .guide-list > ul > li > dl dd {
+            display: table-cell;
+            vertical-align: middle; }
+          .event-wrap .container .section-content .event-box .guide-list > ul > li > dl > dt {
+            width: 140px; }
+            .event-wrap .container .section-content .event-box .guide-list > ul > li > dl > dt > span {
+              display: inline-block;
+              vertical-align: top;
+              font-size: 22px;
+              font-weight: 500;
+              color: #fff;
+              padding: 0 20px;
+              line-height: 50px;
+              background-color: #f2652a;
+              border-radius: 100px; }
+          .event-wrap .container .section-content .event-box .guide-list > ul > li > dl > dd {
+            font-size: 20px;
+            line-height: 30px;
+            padding-left: 20px; }
+        .event-wrap .container .section-content .event-box .guide-list > ul > li ~ li {
+          margin-top: 15px; }
+      .event-wrap .container .section-content .event-box .btn-area {
+        text-align: center;
+        margin-top: 30px; }
+        .event-wrap .container .section-content .event-box .btn-area .btn-event {
+          display: block;
+          max-width: 300px;
+          font-size: 20px;
+          color: #000;
+          line-height: 55px;
+          font-weight: bold;
+          margin: 0 auto;
+          border: 2px solid #000;
+          border-radius: 5px;
+          font-family: "Gowun Dodum", sans-serif;
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          .event-wrap .container .section-content .event-box .btn-area .btn-event:hover {
+            color: #fff;
+            border-color: #1955ad;
+            background-color: #1955ad; }
+      .event-wrap .container .section-content .event-box ~ .event-box {
+        margin-top: 200px; }
+  @media (max-width: 1024px) {
+    .event-wrap {
+      padding-bottom: 100px; }
+      .event-wrap .container .section-header {
+        padding: 60px 0 80px; }
+        .event-wrap .container .section-header small {
+          font-size: 18px;
+          line-height: 36px; }
+        .event-wrap .container .section-header h3 {
+          font-size: 46px;
+          margin-top: 20px; }
+      .event-wrap .container .section-content .event-box {
+        padding: 40px 15px 30px; }
+        .event-wrap .container .section-content .event-box h4 {
+          top: -20px;
+          font-size: 22px;
+          line-height: 40px;
+          white-space: nowrap;
+          padding: 0 20px; }
+        .event-wrap .container .section-content .event-box b {
+          font-size: 22px;
+          margin-bottom: 15px; }
+        .event-wrap .container .section-content .event-box .usr {
+          padding-bottom: 30px; }
+        .event-wrap .container .section-content .event-box .quiz {
+          top: -78px;
+          left: calc(50% - 145px); }
+          .event-wrap .container .section-content .event-box .quiz img {
+            width: 120px; }
+        .event-wrap .container .section-content .event-box .usr-list > li > dl > dt, .event-wrap .container .section-content .event-box .usr-list > li > dl dd {
+          font-size: 16px;
+          line-height: 22px; }
+        .event-wrap .container .section-content .event-box .usr-list.block-list > li > dl > dt {
+          margin-bottom: 5px; }
+        .event-wrap .container .section-content .event-box .box {
+          display: block;
+          padding-top: 30px; }
+          .event-wrap .container .section-content .event-box .box > div {
+            display: block;
+            padding-bottom: 30px; }
+            .event-wrap .container .section-content .event-box .box > div:last-child {
+              padding: 30px 0 0 0;
+              border-left: 0;
+              border-top: 1px dashed #000; }
+        .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dt {
+          font-size: 22px;
+          display: block; }
+        .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dd {
+          display: block;
+          font-size: 16px;
+          line-height: 24px;
+          padding-left: 0;
+          margin-top: 10px; }
+          .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dd .example {
+            margin-top: 20px; }
+            .event-wrap .container .section-content .event-box .quiz-list > ol > li > dl > dd .example > li {
+              font-size: 16px;
+              margin-right: 20px;
+              margin-bottom: 10px; }
+        .event-wrap .container .section-content .event-box .quiz-list > ol > li ~ li {
+          margin-top: 30px; }
+        .event-wrap .container .section-content .event-box .guide-list {
+          margin-top: 30px;
+          padding-right: 0; }
+          .event-wrap .container .section-content .event-box .guide-list > ul > li > dl {
+            display: block; }
+            .event-wrap .container .section-content .event-box .guide-list > ul > li > dl > dt {
+              display: block; }
+              .event-wrap .container .section-content .event-box .guide-list > ul > li > dl > dt span {
+                font-size: 18px;
+                line-height: 40px; }
+            .event-wrap .container .section-content .event-box .guide-list > ul > li > dl > dd {
+              display: block;
+              font-size: 16px;
+              line-height: 24px;
+              padding-left: 0;
+              padding-top: 10px; }
+          .event-wrap .container .section-content .event-box .guide-list .qr-area {
+            position: static;
+            margin-top: 30px; }
+        .event-wrap .container .section-content .event-box ~ .event-box {
+          margin-top: 100px; } }
 
 /*# sourceMappingURL=sub.css.map */
